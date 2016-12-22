@@ -1,11 +1,13 @@
 <?php
 class ReadBooksController extends AppController{
-  public function index(){
-      $read_books = $this->ReadBook->find('all');
-      $this->set('read_books',$read_books);
-  }
+	public $use = array('ReadBook');
 
-  public function edit($id){
-  }
+	public function index(){
+	  $read_books = $this->ReadBook->find('all');
+	  $this->set('read_books',$read_books);
+	}
+
+	public function edit($id){
+	}
 }
  ?>
