@@ -4,5 +4,8 @@ class ReadBooksController extends AppController{
       $read_books = $this->ReadBook->find('all');
       $this->set('read_books',$read_books);
   }
+
+  public function edit($id){
+  }
 }
  ?>
